@@ -22,7 +22,7 @@ const Today = () => {
           <Button>Add Order</Button>
         </Row>
         <Row justify={"space-around"}>
-          <Col span={10} style={{ backgroundColor: "red" }}>
+          <Col span={10}>
             <p>Today&apos;s Orders</p>
           </Col>
           <Col span={10}>
