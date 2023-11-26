@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "customer": 1,
+    "products": [1, 3],
+    "frequancy": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 2,
+    "customer": 2,
+    "products": [2],
+    "frequancy": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 3,
+    "customer": 3,
+    "products": [4, 5],
+    "frequancy": "biweekly",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 4,
+    "customer": 4,
+    "products": [6, 7],
+    "frequancy": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 5,
+    "customer": 5,
+    "products": [8],
+    "frequancy": "sesniorsDay",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 6,
+    "customer": 6,
+    "products": [9, 10],
+    "frequancy": "monthly",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 7,
+    "customer": 7,
+    "products": [11],
+    "frequancy": "sesniorsDay",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 8,
+    "customer": 8,
+    "products": [12],
+    "frequancy": "monthly",
+    "status": "notReady",
+    "contacted": false
+  }
+]

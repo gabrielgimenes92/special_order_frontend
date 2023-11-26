@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "PV warehouse",
+    "orderDays": ["Tuesday", "Friday"],
+    "deliveryDays": ["Tuesday", "Friday"]
+  },
+  {
+    "id": 2,
+    "name": "Jamiesons",
+    "orderDays": ["Sunday", "Wednesday"],
+    "deliveryDays": ["Tuesday", "Friday"],
+    "website": "https://jamiesons.esamco.com/"
+  },
+  {
+    "id": 3,
+    "name": "Avafina",
+    "orderDays": ["Monday"],
+    "deliveryDays": ["Wednesday"],
+    "website": "https://avafinaorders.com/"
+  },
+  {
+    "id": 4,
+    "name": "Red Dog Blue Kat",
+    "orderDays": ["Wednesday"],
+    "deliveryDays": ["Friday"],
+    "website": "https://www.reddogbluekat.com/"
+  },
+  {
+    "id": 5,
+    "name": "Noah's Ark",
+    "website": "https://www.noahsarkpettreats.com/"
+  }
+]

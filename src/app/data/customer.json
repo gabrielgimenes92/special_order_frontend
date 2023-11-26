@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "firstName": "June",
+    "lastName": "Mcdough",
+    "phone": "6041234455",
+    "email": "junemcdough@email.com",
+    "preferredContact": "phone"
+  },
+  {
+    "id": 2,
+    "firstName": "Amanda",
+    "lastName": "Waters",
+    "phone": "6041235566",
+    "email": "amanda2@email.com",
+    "preferredContact": "email"
+  },
+  {
+    "id": 3,
+    "firstName": "Maxwell",
+    "lastName": "Mayer",
+    "phone": "6041234477",
+    "email": "maxwellmayer@email.com",
+    "preferredContact": "phone"
+  },
+  {
+    "id": 4,
+    "firstName": "Owen",
+    "lastName": "Forrest",
+    "phone": "6041234488",
+    "email": "owen@email.com",
+    "preferredContact": "phone"
+  },
+  {
+    "id": 5,
+    "firstName": "Gretta",
+    "lastName": "Tyson",
+    "phone": "6041234499",
+    "email": "gretta@email.com",
+    "preferredContact": "phone"
+  },
+  {
+    "id": 6,
+    "firstName": "Fabian",
+    "lastName": "Ware",
+    "phone": "6041231234",
+    "email": "fabian@email.com",
+    "preferredContact": "email"
+  },
+  {
+    "id": 7,
+    "firstName": "Tanya",
+    "lastName": "Haley",
+    "phone": "6041234321",
+    "email": "tanya@email.com",
+    "preferredContact": "phone"
+  },
+  {
+    "id": 8,
+    "firstName": "Cara",
+    "lastName": "Adamson",
+    "phone": "6041232233",
+    "email": "cara@email.com",
+    "preferredContact": "phone"
+  }
+]
