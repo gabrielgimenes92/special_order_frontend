@@ -36,3 +36,12 @@ a {
 .sider button {
   margin-bottom: 2rem;
 }
+
+.header {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}

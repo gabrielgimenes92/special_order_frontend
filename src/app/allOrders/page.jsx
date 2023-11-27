@@ -1,5 +1,11 @@
+import ItemCard from "../components/ItemCard";
+
 const AllOrders = () => {
-  return <div>All orders</div>;
+  return (
+    <>
+      <ItemCard />
+    </>
+  );
 };
 
 export default AllOrders;

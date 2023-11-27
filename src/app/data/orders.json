@@ -35,7 +35,7 @@
     "id": 5,
     "customer": 5,
     "products": [8],
-    "frequancy": "sesniorsDay",
+    "frequancy": "seniorsDay",
     "status": "notReady",
     "contacted": false
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "customer": 7,
     "products": [11],
-    "frequancy": "sesniorsDay",
+    "frequancy": "seniorsDay",
     "status": "notReady",
     "contacted": false
   },
