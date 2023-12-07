@@ -1,8 +1,8 @@
 import { Card, Space, Table } from "antd";
-import orders from "../data/orders";
-import customers from "../data/customers";
-import products from "../data/products";
-import distributors from "../data/distributors";
+// import orders from "../data/orders";
+// import customers from "../data/customers";
+// import products from "../data/products";
+// import distributors from "../data/distributors";
 
 const columns = [
   { title: "Name", dataIndex: "name", key: "name" },
@@ -16,30 +16,43 @@ const columns = [
 
 const data = [];
 
-orders.map((order) => {
-  const customer = customers.find((cust) => cust.id === order.customer);
+async function fetchData(type) {
+  const response = await fetch(`http://localhost:3000/data/${type}.json`);
 
-  const product = order.products.map((productId) =>
-    products.find((product) => product.id === productId)
-  );
+  const contents = await response.json();
 
-  const distributor = distributors.find(
-    (dist) => dist.id === product[0].distributor
-  );
+  return contents;
+}
 
-  data.push({
-    key: order.id,
-    name: `${customer.firstName} ${customer.lastName}`,
-    itemNumber: product[0].itemNumber,
-    animal: product[0].animal,
-    product: product[0].description,
-    brand: product[0].brand,
-    quantity: product[0].quantity,
-    distributor: distributor.name,
+const ItemCard = async () => {
+  const orders = await fetchData("orders");
+  const customers = await fetchData("customers");
+  const products = await fetchData("products");
+  const distributors = await fetchData("distributors");
+
+  orders.map((order) => {
+    const customer = customers.find((cust) => cust.id === order.customer);
+
+    const product = order.products.map((productId) =>
+      products.find((product) => product.id === productId)
+    );
+
+    const distributor = distributors.find(
+      (dist) => dist.id === product[0].distributor
+    );
+
+    data.push({
+      key: order.id,
+      name: `${customer.firstName} ${customer.lastName}`,
+      itemNumber: product[0].itemNumber,
+      animal: product[0].animal,
+      product: product[0].description,
+      brand: product[0].brand,
+      quantity: product[0].quantity,
+      distributor: distributor.name,
+    });
   });
-});
 
-const ItemCard = () => {
   return (
     <>
       <Table columns={columns} dataSource={data} />

@@ -31,10 +31,13 @@ a {
 
   overflow: hidden;
   padding: 1rem 0;
-}
 
-.sider button {
-  margin-bottom: 2rem;
+  & button {
+    margin-bottom: 2rem;
+  }
+  & .ant-flex {
+    height: 100%;
+  }
 }
 
 .header {

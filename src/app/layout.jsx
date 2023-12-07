@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button, Flex, Layout, Menu, Space } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { Content, Footer, Header } from "antd/es/layout/layout";
-import { HomeOutlined } from "@ant-design/icons";
-import "./globals.css";
+import { HomeOutlined, PlusOutlined } from "@ant-design/icons";
+import "./globals.scss";
 
 import SideMenu from "./components/SideMenu";
 import PageHeader from "./components/PageHeader";
@@ -22,12 +22,21 @@ export default function RootLayout({ children }) {
       <body>
         <Layout style={{ minHeight: "100vh" }}>
           <Sider theme="dark" className="sider">
-            <Flex justify="center">
-              <Link href="/">
-                <Button type="primary" shape="circle" icon={<HomeOutlined />} />
-              </Link>
+            <Flex vertical align="center" justify="space-between">
+              <div>
+                <Flex vertical align="center">
+                  <Link href="/">
+                    <Button
+                      type="primary"
+                      shape="circle"
+                      icon={<HomeOutlined />}
+                    />
+                  </Link>
+                  <SideMenu />
+                </Flex>
+              </div>
+              <Button type="default" shape="circle" icon={<PlusOutlined />} />
             </Flex>
-            <SideMenu />
           </Sider>
           <Layout>
             <Header className="header">
