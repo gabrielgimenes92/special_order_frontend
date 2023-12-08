@@ -26,30 +26,30 @@ async function fetchData(type) {
 
 const ItemCard = async () => {
   const orders = await fetchData("orders");
-  const customers = await fetchData("customers");
   const products = await fetchData("products");
   const distributors = await fetchData("distributors");
 
   orders.map((order) => {
-    const customer = customers.find((cust) => cust.id === order.customer);
-
     const product = order.products.map((productId) =>
       products.find((product) => product.id === productId)
     );
+    const productNumber = product.length;
 
-    const distributor = distributors.find(
-      (dist) => dist.id === product[0].distributor
-    );
-
-    data.push({
-      key: order.id,
-      name: `${customer.firstName} ${customer.lastName}`,
-      itemNumber: product[0].itemNumber,
-      animal: product[0].animal,
-      product: product[0].description,
-      brand: product[0].brand,
-      quantity: product[0].quantity,
-      distributor: distributor.name,
+    product.forEach((prod) => {
+      const distributor = distributors.find(
+        (dist) => dist.id === prod.distributor
+      );
+      console.log("customer", order.customer.name);
+      data.push({
+        key: order.id,
+        name: order.customer.name,
+        itemNumber: prod.itemNumber,
+        animal: prod.animal,
+        product: prod.description,
+        brand: prod.brand,
+        quantity: prod.quantity,
+        distributor: distributor.name,
+      });
     });
   });
 
