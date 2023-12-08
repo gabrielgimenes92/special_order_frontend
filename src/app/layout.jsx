@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Layout style={{ minHeight: "100vh" }}>
+        <Layout style={{ height: "100vh" }}>
           <Sider theme="dark" className="sider">
             <Flex vertical align="center" justify="space-between">
               <div>

@@ -70,7 +70,7 @@ const ItemCard = async () => {
 
   return (
     <>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={data} size="middle" />
     </>
   );
 };
