@@ -33,15 +33,14 @@ const ItemCard = async () => {
     const product = order.products.map((productId) =>
       products.find((product) => product.id === productId)
     );
-    const productNumber = product.length;
 
     product.forEach((prod) => {
       const distributor = distributors.find(
         (dist) => dist.id === prod.distributor
       );
-      console.log("customer", order.customer.name);
+
       data.push({
-        key: order.id,
+        key: data.length + 1,
         name: order.customer.name,
         itemNumber: prod.itemNumber,
         animal: prod.animal,
