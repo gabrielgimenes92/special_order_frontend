@@ -1,8 +1,7 @@
-import { Card, Space, Table } from "antd";
-// import orders from "../data/orders";
-// import customers from "../data/customers";
-// import products from "../data/products";
-// import distributors from "../data/distributors";
+"use server";
+
+import { DeleteOutlined, EditOutlined, FileOutlined } from "@ant-design/icons";
+import { Button, Card, Space, Table } from "antd";
 
 const columns = [
   { title: "Name", dataIndex: "name", key: "name" },
@@ -12,13 +11,17 @@ const columns = [
   { title: "Brand", dataIndex: "brand", key: "brand" },
   { title: "Quantity", dataIndex: "quantity", key: "quantity" },
   { title: "Distributor", dataIndex: "distributor", key: "distributor" },
+  {
+    title: "Actions",
+    dataIndex: "actions",
+    key: "actions",
+  },
 ];
 
 const data = [];
 
 async function fetchData(type) {
   const response = await fetch(`http://localhost:3000/data/${type}.json`);
-
   const contents = await response.json();
 
   return contents;
@@ -48,6 +51,19 @@ const ItemCard = async () => {
         brand: prod.brand,
         quantity: prod.quantity,
         distributor: distributor.name,
+        actions: (
+          <Space size="small">
+            <Button>
+              <FileOutlined />
+            </Button>
+            <Button>
+              <EditOutlined />
+            </Button>
+            <Button>
+              <DeleteOutlined />
+            </Button>
+          </Space>
+        ),
       });
     });
   });
