@@ -25,13 +25,6 @@ export default function RootLayout({ children }) {
             <Flex vertical align="center" justify="space-between">
               <div>
                 <Flex vertical align="center">
-                  <Link href="/">
-                    <Button
-                      type="primary"
-                      shape="circle"
-                      icon={<HomeOutlined />}
-                    />
-                  </Link>
                   <SideMenu />
                 </Flex>
               </div>
