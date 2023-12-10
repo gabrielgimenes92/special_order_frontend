@@ -31,6 +31,8 @@ const columns = [
       },
     ],
     onFilter: (value, record) => record.distributor.indexOf(value) === 0,
+    sorter: (a, b) => a.distributor.length - b.distributor.length,
+    sortDirections: ["ascend", "descend"],
   },
   {
     title: "Actions",
