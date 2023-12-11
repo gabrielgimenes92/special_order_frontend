@@ -13,7 +13,8 @@
     "antd": "^5.11.2",
     "next": "^14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-highlight-words": "^0.20.0"
   },
   "devDependencies": {
     "eslint": "^8",

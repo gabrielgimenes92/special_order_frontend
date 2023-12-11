@@ -50,7 +50,14 @@ const items = [
 ];
 
 const SideMenu = () => {
-  return <Menu theme="dark" mode="inline" items={items} />;
+  return (
+    <Menu
+      theme="dark"
+      mode="inline"
+      items={items}
+      defaultSelectedKeys={["1"]}
+    />
+  );
 };
 
 export default SideMenu;
