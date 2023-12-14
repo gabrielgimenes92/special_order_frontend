@@ -51,7 +51,7 @@ const AllOrders = async () => {
       });
     });
   });
-
+  console.log(data);
   return (
     <>
       <ItemTable data={data} />

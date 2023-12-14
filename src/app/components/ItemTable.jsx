@@ -4,7 +4,7 @@ import { Button, Input, Space, Table } from "antd";
 import Highlighter from "react-highlight-words";
 import { useState, useRef } from "react";
 
-const ItemCard = ({ data }) => {
+const ItemTable = ({ data }) => {
   const [searchText, setSearchText] = useState("");
   const [searchedColumn, setSearchedColumn] = useState("");
   const searchInput = useRef(null);
@@ -174,4 +174,4 @@ const ItemCard = ({ data }) => {
   );
 };
 
-export default ItemCard;
+export default ItemTable;
