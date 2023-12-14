@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "customer": {
+      "name": "June Mcdough",
+      "phone": "6041234455",
+      "email": "junemcdough@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [1, 3],
+    "frequency": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 2,
+    "customer": {
+      "name": "Amanda Waters",
+      "phone": "6041235566",
+      "email": "amanda2@email.com",
+      "preferredContact": "email"
+    },
+    "products": [2],
+    "frequency": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 3,
+    "customer": {
+      "name": "Maxwell Mayer",
+      "phone": "6041234477",
+      "email": "maxwellmayer@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [4, 5],
+    "frequency": "biweekly",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 4,
+    "customer": {
+      "name": "Owen Forrest",
+      "phone": "6041234488",
+      "email": "owen@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [6, 7],
+    "frequency": "oneTime",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 5,
+    "customer": {
+      "name": "Gretta Tyson",
+      "phone": "6041234499",
+      "email": "gretta@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [8],
+    "frequency": "seniorsDay",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 6,
+    "customer": {
+      "name": "Fabian Ware",
+      "phone": "6041231234",
+      "email": "fabian@email.com",
+      "preferredContact": "email"
+    },
+    "products": [9, 10],
+    "frequency": "monthly",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 7,
+    "customer": {
+      "name": "Tanya Haley",
+      "phone": "6041234321",
+      "email": "tanya@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [11],
+    "frequency": "seniorsDay",
+    "status": "notReady",
+    "contacted": false
+  },
+  {
+    "id": 8,
+    "customer": {
+      "name": "Cara Adamson",
+      "phone": "6041232233",
+      "email": "cara@email.com",
+      "preferredContact": "phone"
+    },
+    "products": [12],
+    "frequency": "monthly",
+    "status": "notReady",
+    "contacted": false
+  }
+]

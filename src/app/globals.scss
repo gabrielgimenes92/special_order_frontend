@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+.test {
+  border: 2px solid red;
+}
+
+.sider {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  overflow: hidden;
+  padding: 1rem 0;
+
+  & button {
+    margin-bottom: 2rem;
+  }
+  & .ant-flex {
+    height: 100%;
+  }
+}
+
+.header {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
