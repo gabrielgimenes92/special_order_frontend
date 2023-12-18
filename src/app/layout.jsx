@@ -1,13 +1,13 @@
 import { Inter } from "next/font/google";
-import Link from "next/link";
-import { Button, Flex, Layout, Menu, Space } from "antd";
+import { Flex, Layout } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { Content, Footer, Header } from "antd/es/layout/layout";
-import { HomeOutlined, PlusOutlined } from "@ant-design/icons";
+
 import "./globals.scss";
 
 import SideMenu from "./components/SideMenu";
 import PageHeader from "./components/PageHeader";
+import AddOrderModal from "./components/AddOrderModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                   <SideMenu />
                 </Flex>
               </div>
-              <Button type="default" shape="circle" icon={<PlusOutlined />} />
+              <AddOrderModal />
             </Flex>
           </Sider>
           <Layout>
